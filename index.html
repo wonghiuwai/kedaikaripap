@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr Karipap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('./image/Karipap website_Ori.jpg') center/cover no-repeat;
+      color: #333;
+      position: relative;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+    nav a {
+      background: #ff4c4c;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 0 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #e33;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #663300;
+      text-align: right;
+    }
+    .cta {
+      background: #ff4c4c;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 24px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 40px 20px;
+    }
+    .product-grid {
+      background: white;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      text-align: center;
+      background: #fff8f0;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      max-width: 100px;
+      height: auto;
+      border-radius: 12px;
+    }
+    .social-bar {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: #000;
+      padding: 8px;
+      border-radius: 0 12px 12px 0;
+    }
+    .social-bar a img {
+      width: 24px;
+      height: 24px;
+      margin: 8px 0;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f3f3f3;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Rumah</a>
+      <a href="#">Menu</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">Cari</a>
+    </nav>
+    <div class="logo">mr karipap</div>
+  </header>
+
+  <button class="cta">Pesan Sekarang</button>
+
+  <!-- Red hibiscus decoration -->
+  <img src="./image/hibiscus.png" alt="hibiscus" style="position:absolute; left:5%; top:200px; width:120px;" />
+  <img src="./image/hibiscus.png" alt="hibiscus" style="position:absolute; left:20%; top:220px; width:120px;" />
+
+  <!-- Social Media Links -->
+  <div class="social-bar">
+    <a href="#"><img src="./image/tiktok.png" alt="TikTok"></a>
+    <a href="#"><img src="./image/whatsapp.png" alt="WhatsApp"></a>
+    <a href="#"><img src="./image/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="./image/twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="./image/facebook.png" alt="Facebook"></a>
+  </div>
+
+  <section class="product-grid">
+    <div class="product">
+      <img src="./image/Karipap Ayam Pedas Berapi.png" alt="Karipap Ayam Pedas Berapi" />
+      <h4>Karipap Ayam Pedas Berapi</h4>
+      <p>RM2.00</p>
+    </div>
+    <div class="product">
+      <img src="./image/Karipap Sardin Berkeju.png" alt="Karipap Sardin Berkeju" />
+      <h4>Karipap Sardin Berkeju</h4>
+      <p>R
