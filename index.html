@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curry Puff Heaven</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('your-background-image.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    header {
+      background-color: rgba(255, 153, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .nav-buttons button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff4d4d;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #e60000;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Featured section for message and images */
+    .featured {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .featured h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    /* Products section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 12px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px 0;
+      font-size: 1.1em;
+    }
+
+    .price {
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    /* Order form styles */
+    form {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    form h3 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e67e22;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: rgba(243, 243, 243, 0.8);
+      color: #333;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 600px){
+      header h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curry Puff Heaven</h1>
+    <p>Delicious, Crispy, Homemade Curry Puffs!</p>
+  </header>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <button>Rumah</button>
+    <button>Menu</button>
+    <button>Tentang Kami</button>
+    <button>Cari</button>
+    <button>mr karipap</button>
+  </div>
+
+  <!-- Featured Message -->
+  <div class="featured">
+    <h2>Pesan Sekarang</h2>
+    <p>Order your favorite curry puffs today!</p>
+  </div>
+
+  <!-- Product Showcase -->
+  <div class="container">
+    <div class="products">
+      <!-- Example Product -->
+      <div class="product">
+        <img src="./image/Karipap website_Ori.jpg" alt="Curry Puff" />
+        <h3>Karipap Ayam Pedas Berapi</h3>
+        <p>Pedas & lazat, resepi asli</p>
+        <p class="price">RM2.00 each</p>
+        <p>Minimum order: 5 pieces</p>
+      </div>
+      <div class="product">
+        <img src="./image/Karipap website_Ori.jpg" alt="Curry Puff" />
+        <h3>Karipap Sardin Berkeju</h3>
+        <p>Sardin + keju, keperluan mantap</p>
+        <p class="price">RM2.50 each</p>
+        <p>Minimum order: 5 pieces</p>
+      </div>
+      <div class="product">
+        <img src="./image/Karipap website_Ori.jpg" alt="Curry Puff" />
+        <h3>Karipap Kentang Rangup</h3>
+        <p>Kentang lecek, kentang ladi tahan lama</p>
+        <p class="price">RM2.00 each</p>
+        <p>Minimum order: 5 pieces</p>
+      </div>
+      <div class="product">
+        <img src="./image/Karipap website_Ori.jpg" alt="Curry Puff" />
+        <h3>Karipap Manis Coklat Pisang</h3>
+        <p>Inti manis untuk penuh memuaskan</p>
+        <p class="price">RM2.50 each</p>
+        <p>Minimum order: 5 pieces</p>
+      </div>
+    </div>
+
+    <!-- Order Form -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <h3>Place Your Order</h3>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Order details (e.g. 10 pieces, delivery address)" required></textarea>
+      <button type="submit">Send Order</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Curry Puff Heaven. All rights reserved.
+  </footer>
+</body>
+</html>
